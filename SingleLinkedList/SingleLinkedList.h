@@ -38,7 +38,7 @@ SingleLinkedList::~SingleLinkedList()
     while (pTempHead)
     {
         Node *temp = pHead;
-        pHead = pHead->pNext;
+        pTempHead = pHead->pNext;
         delete temp;
         temp = NULL;
     }
